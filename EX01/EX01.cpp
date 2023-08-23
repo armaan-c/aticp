@@ -50,5 +50,18 @@ int main(int argc, char const *argv[]){
 
    //Instead use vectors which are like ArrayLists.
 
-
+   vector<int> foo; //vector called foo
+   foo.push_back(53);  //adds 53 to the vector
+   foo.push_back(5);  //adds 53 to the vector. 53,5
+   cout<<foo.at(0)<<endl;
+   cout<<foo[0]<<endl;
+   foo.size();
+   foo.pop_back(); //gets rid of the last item
+   foo[1] = 28;
+   foo.erase(foo.begin()+1); //removes the element at position 1
+   cout<<"The Vector currently has: "<<endl;
+   for (unsigned int i = 0 ; i < foo.size(); i++){ 
+      cout<<foo[i]<<endl;
+   }
+   
 }
